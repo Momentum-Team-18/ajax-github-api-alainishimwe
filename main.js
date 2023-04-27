@@ -29,17 +29,18 @@ fetch(giturl, {
 
         let secondDiv = document.createElement('div')
         let myLocation = document.createElement('p')
-        myLocation.innerText = `Location : ${data.location}\n GitHub URL: `
+
+
+        myLocation.innerText = `Location : ${data.location}\n GitHub Username: alainishimwe \n GitHub URL:`
         secondDiv.appendChild(myLocation)
         mainContainer.appendChild(secondDiv)
         let myusername = document.createElement('a');
         let usernameLink =  document.createTextNode("alainishimwe")
         myusername.appendChild(usernameLink);
         myusername.href = data.html_url
-        console.log(myusername);
         myLocation.appendChild(myusername);
         secondDiv.appendChild(myLocation);
-        mainContainer.appendChild(myLocation);
+        mainContainer.appendChild(secondDiv);
 
 
 
@@ -72,6 +73,8 @@ fetch(giturl, {
                     repoLink.href = repo.html_url;
                     thirdDiv.appendChild(repoLink);
                     mainContainer.appendChild(thirdDiv);
+
+                    thirdDiv.classList.add("thirdDiv")
 
 
 
