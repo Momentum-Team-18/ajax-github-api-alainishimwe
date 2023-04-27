@@ -1,0 +1,20 @@
+#mainContainer {
+    height: 100vh;
+    /* display: flex;
+    flex-wrap: wrap; */
+} 
+
+.myPic {
+    width: 100px;
+    height: 100px;
+}
+
+.secondDiv {
+    /* display: flex; */
+    /* height: 500px; */
+}
+
+.thirdDiv {
+    display: grid; 
+    grid-template-rows: auto;
+}
